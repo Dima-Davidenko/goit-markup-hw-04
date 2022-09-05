@@ -359,7 +359,6 @@
 .main .section.team .team-list .social-net-list .item {
   width: 44px;
   height: 44px;
-  padding: 12px;
 
   color: var(--icon-main-clr);
 
@@ -371,6 +370,10 @@
   background-color: var(--primary-accent-clr);
 
   cursor: pointer;
+}
+.main .section.team .team-list .social-net-list .item .link {
+  display: block;
+  padding: 12px;
 }
 .main .section.team .team-list .social-net-list .item .icon {
   fill: currentColor;
@@ -385,10 +388,6 @@
   justify-content: space-between;
 }
 .main .section.clients .clients-list .item {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-
   color: var(--icon-main-clr);
 
   border: 1px solid var(--icon-main-clr);
@@ -398,9 +397,14 @@
   color: var(--primary-accent-clr);
 
   border-color: var(--primary-accent-clr);
-
-  cursor: pointer;
 }
+.main .section.clients .clients-list .item .link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+}
+
 .main .section.clients .list.clients-list .icon {
   fill: currentColor;
 }
@@ -467,13 +471,17 @@
 .footer .social-net-list .item {
   width: 44px;
   height: 44px;
-  padding: 12px;
 
   color: var(--sec-text-clr);
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+.footer .social-net-list .item .link {
+  display: block;
+  padding: 12px;
+}
+
 .footer .social-net-list .item:hover {
   color: var(--sec-text-clr);
 
