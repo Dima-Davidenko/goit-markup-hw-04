@@ -110,14 +110,10 @@
 /* Header ------------------------------------- */
 
 /* Header elements positioning */
-.header {
-  min-width: 1200px;
-}
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 80px;
 
   border-bottom: 1px solid #ececec;
 }
@@ -147,6 +143,8 @@
 
 /* Header Site navigation */
 .header .site-nav .link.page {
+  display: block;
+  padding: 32px 0 31px;
   font-weight: var(--prime-fnt-weight);
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -182,9 +180,6 @@
 /* Main ------------------------------------------------------------- */
 
 /* Main General Sections */
-.main .section {
-  min-width: 1200px;
-}
 .main .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -204,14 +199,14 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   background-color: var(--sec-bkg-clr);
-  background-origin: content-box;
+  /* background-origin: content-box; */
   background-size: cover;
   background-position: center;
 }
 /* Main Hero Title */
 .main .section.hero .hero-title {
   display: block;
-  width: 696px;
+  max-width: 696px;
   margin-top: 0;
   margin: 0 auto 30px;
 
@@ -240,7 +235,7 @@
 /* Main Feature list */
 .main .section.features {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 .main .section.features .features-list .wrapper {
   width: 270px;
@@ -291,6 +286,7 @@
 
 /* Main Work examples */
 .main .section.work-examples {
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 .main .section.work-examples .section-title {
@@ -416,8 +412,7 @@
 /* Footer */
 
 .footer {
-  min-width: 1200px;
-  padding: 60px;
+  padding: 60px 0;
 
   background-color: var(--sec-bkg-clr);
 }
