@@ -96,10 +96,12 @@
 
   background-color: var(--sec-accent-clr);
 }
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
   color: var(--sec-text-clr);
 
   background-color: var(--primary-accent-clr);
+  outline: none;
 }
 .button.active {
   color: var(--sec-text-clr);
@@ -166,6 +168,9 @@
   color: var(--primary-text-clr);
 }
 .header .contact-list .item:hover {
+  color: var(--primary-accent-clr);
+}
+.header .contact-list .item .link:focus {
   color: var(--primary-accent-clr);
 }
 .header .contact-list .item .icon {
@@ -238,9 +243,11 @@
   padding-bottom: 47px;
 }
 .main .section.features .features-list .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
 
   background-color: #f5f4fa;
@@ -352,7 +359,9 @@
   margin: 16px auto 0;
   justify-content: space-between;
 }
-.main .section.team .team-list .social-net-list .item {
+.main .section.team .team-list .social-net-list .item .link {
+  display: block;
+  padding: 12px;
   width: 44px;
   height: 44px;
 
@@ -360,16 +369,14 @@
 
   border-radius: 50%;
 }
-.main .section.team .team-list .social-net-list .item:hover {
+.main .section.team .team-list .social-net-list .item .link:hover,
+.main .section.team .team-list .social-net-list .item .link:focus {
   color: var(--sec-text-clr);
 
   background-color: var(--primary-accent-clr);
 
   cursor: pointer;
-}
-.main .section.team .team-list .social-net-list .item .link {
-  display: block;
-  padding: 12px;
+  outline: none;
 }
 .main .section.team .team-list .social-net-list .item .icon {
   fill: currentColor;
@@ -395,10 +402,15 @@
   border-color: var(--primary-accent-clr);
 }
 .main .section.clients .clients-list .item .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+}
+.main .section.clients .clients-list .item .link:focus {
+  color: var(--primary-accent-clr);
+  outline: 1px solid var(--primary-accent-clr);
 }
 
 .main .section.clients .list.clients-list .icon {
@@ -436,13 +448,18 @@
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer .contacts .link.contact:hover {
+.footer .contacts .link.contact:hover,
+.footer .contacts .link.contact:focus {
   color: var(--primary-accent-clr);
 }
 /* Footer WebStudio Location */
 .footer .contacts .link.gmaps {
   line-height: 1.71;
   color: var(--sec-text-clr);
+}
+.footer .contacts .link.gmaps:hover,
+.footer .contacts .link.gmaps:focus {
+  color: var(--primary-accent-clr);
 }
 .footer .contacts .list .item.item:not(:last-child) {
   margin-bottom: 9px;
@@ -463,7 +480,7 @@
   margin: 20px 0 0 0;
   justify-content: space-between;
 }
-.footer .social-net-list .item {
+.footer .social-net-list .item .link {
   width: 44px;
   height: 44px;
 
@@ -477,12 +494,14 @@
   padding: 12px;
 }
 
-.footer .social-net-list .item:hover {
+.footer .social-net-list .item .link:hover,
+.footer .social-net-list .item .link:focus {
   color: var(--sec-text-clr);
 
   background-color: var(--primary-accent-clr);
 
   cursor: pointer;
+  outline: none;
 }
 .footer .social-net-list .item .icon {
   fill: currentColor;
@@ -540,9 +559,11 @@
 .main .section.projects .projects-list .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.main .section.projects .projects-list .item:hover {
+.main .section.projects .projects-list .item .link:hover,
+.main .section.projects .projects-list .item .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 /* Main Projects Project list img remoove white space */
 .main .section.projects .projects-list .img {
