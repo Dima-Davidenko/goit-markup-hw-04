@@ -175,11 +175,13 @@
 }
 .header .contact-list .item .icon {
   margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 
   fill: currentColor;
 }
 .header .contact-list .item .link {
-  display: block;
+  display: flex;
 }
 
 /* Main ------------------------------------------------------------- */
